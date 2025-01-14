@@ -50,3 +50,13 @@ body {
   :focus
   :active
 */
+
+.navigation-list-link:hover,
+.navigation-list-link:focus {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.navigation-list-link:active {
+  color: tomato;
+}
