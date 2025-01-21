@@ -65,6 +65,12 @@ a {
   margin-bottom: 20px;
   padding-left: 20px;
   border: 1px solid #303030;
+  transition: border-color 250ms linear;
+}
+
+.order-form-input:focus {
+  outline: transparent;
+  border-color: #fd9222;
 }
 
 .order-form-fieldset {
@@ -85,6 +91,17 @@ a {
   margin-bottom: 20px;
 
   resize: none;
+  transition: border-color 250ms linear;
+}
+
+.order-form-comment:focus {
+  outline: transparent;
+  border-color: #fd9222;
+}
+
+.order-form-comment::placeholder {
+  font-size: 20px;
+  color: teal;
 }
 
 .order-form-city-wrapper {
@@ -118,4 +135,30 @@ a {
 .order-form-btn:hover,
 .order-form-btn:focus {
   opacity: 0.7;
+}
+
+.privacy-policy-label {
+  font-size: 14px;
+}
+
+.privacy-policy-wrapper {
+  margin-bottom: 20px;
+}
+
+.privacy-policy-custom-checkbox {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #303030;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+.privacy-policy-checkbox:checked + .privacy-policy-label .privacy-policy-custom-checkbox {
+  background-color: teal;
+}
+
+.privacy-policy-checkbox:focus + .privacy-policy-label .privacy-policy-custom-checkbox {
+  outline: 2px solid rgba(0, 0, 255, 0.5);
 }
